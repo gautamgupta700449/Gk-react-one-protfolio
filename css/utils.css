@@ -1,0 +1,61 @@
+#menu{
+    position: fixed;
+    top: 2rem; right: 2rem;
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    font-size: 2.5rem;
+    display: none;
+}
+.btn{
+    display: inline-block;
+    padding: .5rem 3rem;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    border-radius: 5px solid #3c67e3;
+    text-decoration: none;
+}
+.btn i{
+    padding: 0  .4rem;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    /* background-color:green; */
+    color: green;
+    animation: pulsate 1s 2 ease-in-out;
+    
+}
+@keyframes pulsate {
+    0%{
+  box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    }
+    10%{
+  box-shadow: 0 0 25px #0deb4f, 0 0 50px #d82c2c;
+    }
+  }
+
+.slider{
+    position: relative;
+    width: 1px;
+    height: 5px;
+    opacity: 1;
+    background-color: red;
+    overflow: hidden;
+    animation: slider 5s 1 ease-in-out;
+
+}
+
+@keyframes slider {
+    from{
+width: 0px;
+    }
+    to{
+        width: 300vh;
+    }
+}
