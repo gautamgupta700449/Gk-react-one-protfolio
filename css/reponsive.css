@@ -28,6 +28,7 @@
 @media (max-width: 400px) {
   header {
     width: 100vw;
+    display: hidden;
   }
   .heading {
     margin: 0 3rem;

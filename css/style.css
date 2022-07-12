@@ -89,7 +89,7 @@ header {
   text-align: center;
 }
 #time{
-  text-align: right;
+  text-align: left;
   color: var(--primary-color);
   /* position: fixed; */
   position: relative;
