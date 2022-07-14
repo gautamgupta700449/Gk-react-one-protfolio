@@ -119,10 +119,10 @@ header .navbar {
 }
 header .navbar ul {
   list-style: none;
-  padding: 1rem 3rem;
+  padding: 5rem 5rem;
 }
 header .navbar ul li a {
-  display: block;
+  display:block;
   color: var(--secondary-color);
   background-color:var(--primary-color);
   padding: 0.5rem;
@@ -142,15 +142,15 @@ header .navbar ul li a:hover {
 display: flex;
 position: relative;
 align-items: center;
-/* justify-content: center; */
-/* flex-wrap: wrap; */
-z-index: 1;
+justify-content: center; 
+z-index: 1000;
+top: 90px;
 }
 
 .social i{
   color:var(--secondary-color);
-  margin:3rem .5rem;
-  padding: 1rem 1rem;
+  margin:5rem .5rem;
+  padding:  0.5rem;
   font-size: 2.5em;
   border-radius: 50px;
   border-radius: 5px solid #333c76e3;
