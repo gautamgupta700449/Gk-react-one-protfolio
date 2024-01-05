@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaina+2:wght@500&family=Nunito:wght@300&family=Roboto:wght@300&display=swap");
 :root {
   --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff; 
+  --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
@@ -11,13 +11,16 @@
   --font3: "Nunito", sans-serif;
   --font4: "Roboto", sans-serif;
   --primary-color: #212121;
-  --secondary-color:#edf2fc;
+  --secondary-color: #edf2fc;
 }
 /* .dark-theme{
   --primary-color:#fff;
   --secondary-color:#000106;
   --third-color:#212121;
 } */
+.icon{
+  border-radius: 50%;
+}
 * {
   padding: 0;
   margin: 0;
@@ -27,12 +30,13 @@
   border: none;
   text-transform: capitalize;
 }
-::before,::after{
+::before,
+::after {
   box-sizing: border-box;
 }
 *::selection {
   background: var(--color);
-  color: black;
+  color: var(--primary-color);
 }
 html {
   font-size: 62.5%;
@@ -42,7 +46,7 @@ html::-webkit-scrollbar {
   width: 1.4rem;
 }
 html::-webkit-scrollbar-track {
-  background:var(--secondary-color);
+  background: var(--color);
 }
 html::-webkit-scrollbar-thumb {
   background: var(--color);
@@ -51,27 +55,27 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.3;
-  /* background-color:transparent; */
+  background-color: transparent;
   overflow-x: hidden;
   font-family: var(--font4);
   padding-left: 35rem;
 }
-section{
+section {
   background: white;
-  min-height: 60vh;
+  min-height: 70vh;
   padding: 0.25rem;
-  display: block;
-  opacity: 1; 
+  display: inline-block;
+  opacity: 1;
 }
-.heading{
+.heading {
   text-align: center;
   margin: 0 6rem;
   padding: 1rem;
   font-size: 4rem;
-  border-bottom: .1rem solid black;
-  color:var(--primary-color);
+  border-bottom: 0.1rem solid black;
+  color: var(--primary-color);
 }
-.heading span{
+.heading span {
   color: var(--color);
 }
 header {
@@ -88,13 +92,12 @@ header {
   flex-flow: column;
   text-align: center;
 }
-#time{
+#time {
   text-align: left;
   color: var(--primary-color);
-  /* position: fixed; */
-  position: relative;
+  position: fixed;
+  /* position: relative; */
   margin: 2rem;
-  
   font-size: 1.5rem;
 }
 header .user img {
@@ -103,6 +106,7 @@ header .user img {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
+  margin-left: 4rem;
   border: 1px solid var(--color);
 }
 
@@ -122,144 +126,146 @@ header .navbar ul {
   padding: 5rem 5rem;
 }
 header .navbar ul li a {
-  display:block;
+  display: block;
   color: var(--secondary-color);
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   padding: 0.5rem;
   margin: 1rem 0;
   font-size: 1.8rem;
   border-radius: 3rem;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header .navbar ul li a:hover {
-  background-color:white;
+  background-color: white;
   color: green;
   font-weight: bold;
   animation: pulsate 1s ease-in-out;
-  
 }
-.social{
-display: flex;
-position: relative;
-align-items: center;
-justify-content: center; 
-z-index: 1000;
-top: 90px;
+.social {
+  position: relative;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-.social i{
-  color:var(--secondary-color);
-  margin:5rem .5rem;
-  padding:  0.5rem;
+.social i {
+  color: var(--secondary-color);
+  margin: 5rem 0.5rem;
+  padding: 0.5rem;
   font-size: 2.5em;
   border-radius: 50px;
   border-radius: 5px solid #333c76e3;
 }
-.social i:hover{
+.social i:hover {
   /* background-color: var(--secondary-color); */
-  color:green;
+  color: green;
   cursor: pointer;
   animation: pulsate 1s ease-in-out;
 
   /* height: 3rem; */
   /* width: 3rem; */
 }
-.home{
+.home {
   display: flex;
   justify-content: center;
   flex-flow: column;
   padding: 0 15rem;
 }
-.home h3{
+.home h3 {
   font-size: 2.5rem;
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
-.home h1{
+.home h1 {
   font-size: 5rem;
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
-.home h3 span{
-color: green;
+.home h3 span {
+  color: green;
 }
-.home p{
-font-size: 2rem;
-color: var(--primary-color);
-padding: 1rem 0;
+.home p {
+  font-size: 2rem;
+  color: var(--primary-color);
+  padding: 1rem 0;
 }
-.about .row{
+.about .row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem 0;
 }
-.about .row h3{
-  color:var(--primary-color);
+.about .row h3 {
+  color: var(--primary-color);
   font-size: 2.5rem;
   padding: 2rem 5rem;
   margin: 1rem 5px;
   font-weight: normal;
 }
-.about .row p{
+.about .row p {
   font-size: 1.8rem;
   color: var(--primary-color);
   padding: 2rem 8rem;
 }
-.about .row .info{
+.about .row .info {
   flex: 1 1 48rem;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   padding-left: 6rem;
 }
-.about .row .info h3{
+.about .row .info h3 {
   font-size: 2rem;
-    color: darkviolet;
-    padding: 1rem 0px;
-    font-weight: bold;
+  color: darkviolet;
+  padding: 1rem 0px;
+  font-weight: bold;
 }
-.about .row .info h3 span{
-  color:var(--primary-color);
-  padding: 0 .8rem;
+.about .row .info h3 span {
+  color: var(--primary-color);
+  padding: 0 0.8rem;
 }
-.about .row .counter{
+.about .row .counter {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex: 1 1 48rem;
 }
-.about .row .counter .box{
-width: 20rem;
-background-color: var(--primary-color);
-text-align: center;
-padding: 1rem;
-margin: 1rem;
+.about .row .counter .box {
+  width: 20rem;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
 }
-.about .row .counter .box span{
+.about .row .counter .box:hover {
+  animation: pulsate 1s 2 ease-in-out;
+}
+.about .row .counter .box span {
   font-size: 4rem;
   color: var(--color);
 }
-.about .row .counter .box h3{
+.about .row .counter .box h3 {
   font-size: 2rem;
   color: var(--secondary-color);
 }
 
-.education .box-container{
+.education .box-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 3rem;
-  padding: 1rem 0;
+  margin: 1rem 0.6rem;
 }
-.education .box-container .box{
+.education .box-container .box {
   width: 27rem;
-  margin: 5rem 2rem;
+  margin: 5rem 1rem;
   padding-left: 4rem;
   border-left: 2px solid black;
   position: relative;
 }
-.education .box-container i{
+.education .box-container i {
   position: absolute;
-  top: -2.5rem;
+  top: -4.5rem;
   left: -2.5rem;
   width: 5rem;
   height: 5rem;
@@ -270,67 +276,67 @@ margin: 1rem;
   background-color: var(--color);
   padding-top: 1.3rem;
 }
-.education .box-container .box h3{
+.education .box-container .box h3 {
   font-size: 2rem;
   color: darkviolet;
   padding: 1rem 0px;
   font-weight: bold;
 }
-.education .box-container .box h3 span{
+.education .box-container .box h3 span {
   color: var(--primary-color);
-  padding: 0 .8rem;
+  padding: 0 0.8rem;
 }
-.contact .row{
+.contact .row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.contact .row .content{
-flex: 1 1 30rem;
-padding: 0 4rem;
-padding-bottom: 4rem;
+.contact .row .content {
+  flex: 1 1 30rem;
+  padding: 0 2rem;
+  padding-bottom: 18rem;
 }
-.contact .row .content .title{
+.contact .row .content .title {
   text-transform: uppercase;
-  color:var(--primary-color);
+  color: var(--primary-color);
   font-size: 3rem;
   padding-bottom: 2rem;
 }
-.contact .row .content .info h3{
+.contact .row .content .info h3 {
   display: flex;
-  align-items:center ;
+  align-items: center;
   font-size: 2rem;
-  color:var(--primary-color);
+  color: var(--primary-color);
   padding: 1rem 0;
   text-transform: lowercase;
 }
-.contact .row .content .info h3 i{
+.contact .row .content .info h3 i {
   color: var(--color);
   padding-right: 1rem;
 }
-.contact .row form{
-flex:1 1 30rem;
-padding: 1rem;
-margin: 1rem;
-margin-bottom: 4rem;
+.contact .row form {
+  flex: 1 1 30rem;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 4rem;
 }
-.contact .row form .box{
+.contact .row form .box {
   padding: 1.5rem;
-  margin: 1rem -23px;
-  background-color:var(--secondary-color);
-  color:var(--primary-color);
+  margin: 1rem -6px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   text-transform: none;
   font-size: 1.7rem;
   width: 100%;
 }
-.contact .row form .box::placeholder{
-text-transform: capitalize;
+.contact .row form .box::placeholder {
+  text-transform: capitalize;
 }
-.contact-row form .message{
-height: 10rem;
-resize: none;
+.contact-row form .message {
+  height: 10rem;
+  resize: none;
 }
-.contact-form{
+.contact-form {
   flex: 1 1 50rem;
 }

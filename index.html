@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/utils.css" />
   <link rel="stylesheet" href="css/reponsive.css" />
-  <link rel="shortcut icon" href="/image/inm2.JPG" type="image/x-icon" />
+  <link rel="shortcut icon"  href="/image/IMG20230325135100.jpg " type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -20,7 +20,7 @@
     <div class="slider"></div>
     <header>
       <div class="user">
-        <!-- <img src="/image/inm2.JPG" alt="image" /> -->
+        <img src="/image/IMG20230325135100.jpg" alt="image" />
         <h3 class="name" style="color: yellow">Gautam Gupta</h3>
         <p class="post">Front end developer</p>
       </div>
@@ -42,10 +42,16 @@
         <a href="kumarguptagautam20@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
       </div>
     </header>
-    <div id="time" class="font-bold">Time</div>
-    <div id="menu">
-      <i class="fas fa-bars"></i>
-    </div>
+    <div class="heading">
+      <div id="time" class="font-bold">Time</div>
+      <div class="login">
+        <Button class="btn1"><a href="login.html">Login</a></Button>
+      </div>
+      <div id="menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div> 
+   
     <!--=========Home Section Start======-->
     <section class="home" id="home">
       <div class="container">
@@ -91,10 +97,10 @@
         <div class="info">
           <h3><span>Name :</span>Gautam kumar Gupta</h3>
           <h3><span>Age :</span>22</h3>
-          <h3><span>Qualification :</span>BCA</h3>
+          <h3><span>Qualification :</span>M.C.A</h3>
           <h3><span>Post :</span>Front end developer</h3>
           <h3><span>Language :</span>Hindi</h3>
-          <a href="#contact"><button class="btn">
+          <a href="image/gautamvc.docx"><button class="btn">
               download cv <i class="fas fa-download"></i></button></a>
         </div>
         <div class="counter">
@@ -140,8 +146,14 @@
         <div class="box">
           <i class="fas fa-graduation-cap"></i>
           <h3><span>Year :</span>2021</h3>
-          <h3><span>Qualification :</span>BCA</h3>
+          <h3><span>Qualification :</span>B.C.A</h3>
           <h3><span>College :</span>R.D.S College Muzaffarpur</h3>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <h3><span>Year :</span>2024</h3>
+          <h3><span>Qualification :</span>M.C.A</h3>
+          <h3><span>College :</span>Lovely Professional University</h3>
         </div>
       </div>
     </section>
@@ -169,7 +181,7 @@
         </div>
         <div class="contact-form">
           <form action="https://getform.io/f/723e4629-f996-4492-aa74-bb5dbb32400d" method="POST">
-            <input class="box" type="username" name="name" id placeholder="Enter name" required autocomplete="off"
+            <input class="box" type="username" name="name" id="name" placeholder="Enter name" required autocomplete="off"
               style="text-transform: capitalize" />
             <input class="box" type="email" name="email" id="email" placeholder="Enter Email" required
               autocomplete="off" />
@@ -177,7 +189,7 @@
               autocomplete="off" />
             <textarea class="box message" name="message" id="msg" cols="5" rows="5" placeholder="Enter message" required
               autocomplete="off" style="text-transform: capitalize"></textarea>
-            <button class="btn">
+            <button onclick="" class="btn btn-dangure">
               send <i class="fas fa-paper-plane"></i>
             </button>
           </form>
