@@ -1,71 +1,81 @@
-#menu{
-    position: fixed;
-    top: 2rem; right: 2rem;
-    background-color:var(--primary-color);
-    color:var(--secondary-color);
-    cursor: pointer;
-    padding: 1rem 1.5rem;
-    z-index: 1000;
-    font-size: 2.5rem;
-    display: none;
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  font-size: 2.5rem;
+  display: none;
 }
-.btn{
-    
-    padding: .5rem 3rem;
-    background-color:var(--primary-color);
-    color: var(--secondary-color);
-    cursor: pointer;
-    margin-top: 1rem;
-    font-size: 2rem;
-    border-radius: 2rem;
-    
-    text-decoration: none;
+.login {
+  position: relative;
+  text-align: right;
 }
-.btn1{
-flex: 1;
-display: inline-block;
-cursor: pointer;
-margin-top: 1rem;
-font-size: 2rem;
-background-color: black;
-color: white;
-padding: 1rem 1rem;
-border-radius: 11px;
+.btn1 {
+  padding: 0.5rem 3rem;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transform: matrix3d();
 }
-.btn i{
-    padding: 0  .4rem;
-    font-size: 1.8rem;
+.btn1 a {
+  color: white;
+  animation: 1s ease-in-out;
 }
-.btn:hover{
-    color: green;
-    animation: pulsate 1s 2 ease-in-out;
-    
+.btn1:hover {
+  background-color: #054b1a;
+}
+.btn {
+  padding: 0.5rem 3rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+
+  text-decoration: none;
+}
+.btn i {
+  padding: 0 0.4rem;
+  font-size: 1.8rem;
+}
+.btn:hover {
+  color: green;
+  animation: pulsate 1s 2 ease-in-out;
 }
 @keyframes pulsate {
-    0%{
-  box-shadow: 0 0 25px #045369, 0 0 50px #4e00c2;
-    }
-    10%{
-  box-shadow: 0 0 25px #054b1a, 0 0 50px #d82c2c;
-    }
+  0% {
+    box-shadow: 0 0 25px #045369, 0 0 50px #4e00c2;
   }
+  10% {
+    box-shadow: 0 0 25px #054b1a, 0 0 50px #d82c2c;
+  }
+}
 
-.slider{
-    position: relative;
-    width: 1px;
-    height: 5px;
-    opacity: 1;
-    background-color: red;
-    overflow: hidden;
-    animation: slider 5s 1 ease-in-out;
-
+.slider {
+  position: relative;
+  width: 1px;
+  height: 5px;
+  opacity: 1;
+  background-color: red;
+  overflow: hidden;
+  animation: slider 5s 1 ease-in-out;
 }
 
 @keyframes slider {
-    from{
-width: 0px;
-    }
-    to{
-        width: 300vh;
-    }
+  from {
+    width: 0px;
+  }
+  to {
+    width: 300vh;
+  }
 }

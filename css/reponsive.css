@@ -3,45 +3,66 @@
     font-size: 55%;
   }
   .home {
-    padding: 1rem 4rem;
+    padding: 0 2rem;
   }
 }
 @media (max-width: 990px) {
   header {
     left: -120%;
   }
+  .home {
+    padding: 0 2rem;
+  }
   #menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   header.toggle {
     left: 0%;
   }
   body {
+    height: auto;
     padding: 0;
   }
 }
 @media (max-width: 768px) {
   html {
+    height: auto;
     font-size: 50%;
+  }
+  .home {
+    padding: 0 2rem;
+  }
+  .row p{
+    margin: auto;
+    
   }
 }
 @media (max-width: 400px) {
   header {
     width: 100vw;
+    height: auto;
     display: hidden;
+  }
+  .home {
+    padding: 0 2rem;
   }
   .heading {
     margin: 0 3rem;
   }
   .about .row .counter .box {
     width: 100%;
+    height: auto;
   }
   .education .box-container .box{
     width: 100%;
+    height: auto;
   }
   .contact .row form{
     width: 100%;
-    margin: 3rem;
+    height: auto;
+    margin: 1rem;
   }
   
 }
